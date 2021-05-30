@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravity</title>
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="img/logo.jpg"></a>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2>Can´t <span>beat</span> the view</h2>
+            <hr>
+            <p>Gravity is a 2013 science fiction thriller film directed by Alfonso Cuarón, who also co-wrote, co-edited, and produced the film. It stars Sandra Bullock and George Clooney as American astronauts who are stranded in space after the mid-orbit
+                destruction of their Space Shuttle, and attempt to return to Earth.</p>
+            <a href="#" class="play" onclick="toggle();"><img src="img/play.png">Watch Trailer</a>
+            <div class="slide"></div>
+            <ul class="sci">
+                <li>
+                    <a href="#"><img src="img/facebook.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/twitter.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/instagram.png"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="img/trailer.mp4" controls="true"></video>
+        <img src="img/close.png" class="close" onclick="toggle();">
+    </div>
+    <script type="text/javascript">
+        function toggle() {
+            var trailer = document.querySelector('.trailer');
+            trailer.classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>
